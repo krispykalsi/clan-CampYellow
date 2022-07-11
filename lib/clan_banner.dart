@@ -42,22 +42,19 @@ class ClanBanner extends StatelessWidget {
           child: Container(
             color: Colors.black54,
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 20),
-            child: DefaultTextStyle(
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Clan name: $name"),
-                  const Divider(height: 8),
-                  Text(
-                    "$totalMembers members, $onlineMembers online",
-                    style: const TextStyle(fontSize: 16),
-                  ),
-                ],
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Clan name: $name",
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+                const Divider(height: 8),
+                Text(
+                  "$totalMembers members, $onlineMembers online",
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+              ],
             ),
           ),
         ),
