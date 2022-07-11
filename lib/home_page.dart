@@ -1,5 +1,11 @@
 import 'package:clan/achievement_section.dart';
+import 'package:clan/clan_member.dart';
+import 'package:clan/discussion.dart';
+import 'package:clan/discussion_section.dart';
 import 'package:clan/league.dart';
+import 'package:clan/live_activity.dart';
+import 'package:clan/live_activites_section.dart';
+import 'package:clan/member_section.dart';
 import 'package:clan/past_performances_section.dart';
 import 'package:clan/performance.dart';
 import 'package:flutter/material.dart';
@@ -55,6 +61,49 @@ class HomePage extends StatelessWidget {
                     "Gamer guy lol")
               ],
             ),
+            sectionSeparator,
+            LiveActivitiesSection(
+              liveClanActivites: [
+                LiveActivity(
+                    "https://img.freepik.com/premium-vector/editable-text-effect-treasure-hunt-game-style_156037-149.jpg?w=2000"),
+                LiveActivity(
+                    "https://i.ytimg.com/vi/q1nE7A_pDwQ/maxresdefault.jpg"),
+              ],
+            ),
+            sectionSeparator,
+            DiscussionSection(
+              discussions: [
+                Discussion(
+                    threadName: "General thread",
+                    unreadMessages: 15,
+                    isLive: false),
+                Discussion(
+                    threadName: "Anyone enthu for trading league...",
+                    unreadMessages: 10,
+                    isLive: true),
+                Discussion(
+                    threadName: "Anyone enthu for trading league...",
+                    unreadMessages: 10,
+                    isLive: true),
+                Discussion(
+                    threadName: "Anyone enthu for trading league...",
+                    unreadMessages: 10,
+                    isLive: true),
+              ],
+            ),
+            sectionSeparator,
+            MemberSection(
+              members: [
+                ClanMember(
+                    imageUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+                    name: "Chintu",
+                    designation: "Clan head"),
+                ClanMember(
+                    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+                    name: "Pintu",
+                    designation: "Debating Sensei")
+              ],
+            )
           ],
         ),
       ),
