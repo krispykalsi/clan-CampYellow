@@ -1,4 +1,4 @@
-import 'package:clan/common/int_extensions.dart';
+import 'package:clan/core/int_extensions.dart';
 import 'package:clan/model/league.dart';
 import 'package:flutter/material.dart';
 
