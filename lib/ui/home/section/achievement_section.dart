@@ -1,7 +1,6 @@
-import 'package:clan/league.dart';
+import 'package:clan/common/int_extensions.dart';
+import 'package:clan/model/league.dart';
 import 'package:flutter/material.dart';
-
-import 'int_extensions.dart';
 
 class AchievementSection extends StatelessWidget {
   final League currentLeague;

@@ -1,7 +1,6 @@
+import 'package:clan/model/performance.dart';
+import 'package:clan/ui/common/custom_list_section.dart';
 import 'package:flutter/material.dart';
-
-import 'performance.dart';
-import 'custom_list_section.dart';
 
 class PastPerformancesSection extends StatelessWidget {
   final List<Performance> performances;

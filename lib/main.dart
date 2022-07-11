@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'theme.dart';
-import 'home_page.dart';
-import 'custom_navigation_bar.dart';
+import 'ui/theme.dart';
+import 'ui/home/home_page.dart';
+import 'ui/custom_navigation_bar.dart';
 
 void main() {
   runApp(const ClanApp());

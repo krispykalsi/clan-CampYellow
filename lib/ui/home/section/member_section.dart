@@ -1,7 +1,6 @@
-import 'package:clan/custom_list_section.dart';
+import 'package:clan/model/clan_member.dart';
+import 'package:clan/ui/common/custom_list_section.dart';
 import 'package:flutter/material.dart';
-
-import 'clan_member.dart';
 
 class MemberSection extends StatelessWidget {
   final List<ClanMember> members;

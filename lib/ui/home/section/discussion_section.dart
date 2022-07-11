@@ -1,7 +1,6 @@
-import 'package:clan/custom_list_section.dart';
+import 'package:clan/model/discussion.dart';
+import 'package:clan/ui/common/custom_list_section.dart';
 import 'package:flutter/material.dart';
-
-import 'discussion.dart';
 
 class DiscussionSection extends StatelessWidget {
   final List<Discussion> discussions;

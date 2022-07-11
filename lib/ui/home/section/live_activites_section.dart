@@ -1,7 +1,6 @@
+import 'package:clan/model/live_activity.dart';
+import 'package:clan/ui/common/custom_list_section.dart';
 import 'package:flutter/material.dart';
-
-import 'custom_list_section.dart';
-import 'live_activity.dart';
 
 class LiveActivitiesSection extends StatelessWidget {
   final List<LiveActivity> liveClanActivites;

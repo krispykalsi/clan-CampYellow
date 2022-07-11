@@ -1,16 +1,16 @@
-import 'package:clan/achievement_section.dart';
-import 'package:clan/clan_member.dart';
-import 'package:clan/discussion.dart';
-import 'package:clan/discussion_section.dart';
-import 'package:clan/league.dart';
-import 'package:clan/live_activity.dart';
-import 'package:clan/live_activites_section.dart';
-import 'package:clan/member_section.dart';
-import 'package:clan/past_performances_section.dart';
-import 'package:clan/performance.dart';
+import 'package:clan/model/clan_member.dart';
+import 'package:clan/model/discussion.dart';
+import 'package:clan/model/league.dart';
+import 'package:clan/model/live_activity.dart';
+import 'package:clan/model/performance.dart';
 import 'package:flutter/material.dart';
 
-import 'clan_banner.dart';
+import 'section/clan_banner.dart';
+import 'section/achievement_section.dart';
+import 'section/discussion_section.dart';
+import 'section/live_activites_section.dart';
+import 'section/member_section.dart';
+import 'section/past_performances_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -95,11 +95,13 @@ class HomePage extends StatelessWidget {
             MemberSection(
               members: [
                 ClanMember(
-                    imageUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+                    imageUrl:
+                        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
                     name: "Chintu",
                     designation: "Clan head"),
                 ClanMember(
-                    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+                    imageUrl:
+                        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
                     name: "Pintu",
                     designation: "Debating Sensei")
               ],
